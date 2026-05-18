@@ -260,10 +260,148 @@ body {
   font-size: 0.95rem;
 }
 
-.sidebar-list {
-  list-style: none;
-  padding: 0;
-  margin: 16px 0 0;
+.converter-tool {
+  display: grid;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.converter-panel {
+  display: grid;
+  gap: 20px;
+  padding: 24px;
+  border-radius: 24px;
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+.file-upload {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 18px 20px;
+  background: #eff6ff;
+  border: 1px dashed #93c5fd;
+  border-radius: 18px;
+  color: #1d4ed8;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.file-upload input {
+  display: none;
+}
+
+.conversion-options,
+.conversion-output {
+  display: grid;
+  gap: 18px;
+}
+
+.option-row {
+  display: grid;
+  gap: 10px;
+}
+
+.option-row label {
+  font-weight: 700;
+  color: #111827;
+}
+
+.option-row span {
+  color: #4b5563;
+}
+
+.quality-row {
+  display: grid;
+  gap: 12px;
+}
+
+.quality-row input[type='range'] {
+  width: 100%;
+}
+
+.primary-button {
+  width: fit-content;
+}
+
+.status-message {
+  color: #374151;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.status-error {
+  color: #dc2626;
+}
+
+.status-success {
+  color: #16a34a;
+}
+
+.preview-wrapper {
+  display: grid;
+  gap: 16px;
+}
+
+.preview-stack {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  min-height: 320px;
+  background: #111827;
+}
+
+.preview-stack img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.after-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.preview-label {
+  position: absolute;
+  z-index: 4;
+  top: 14px;
+  padding: 8px 12px;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  color: white;
+  background: rgba(31, 41, 55, 0.7);
+}
+
+.preview-label.before {
+  left: 14px;
+}
+
+.preview-label.after {
+  right: 14px;
+}
+
+.before-after-slider {
+  display: grid;
+  gap: 10px;
+}
+
+.before-after-slider input[type='range'] {
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
   display: grid;
   gap: 12px;
 }

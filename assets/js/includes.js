@@ -16,6 +16,8 @@ async function loadPartial(containerId, partialUrl) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  loadPartial('site-header', 'partials/header.html');
-  loadPartial('site-footer', 'partials/footer.html');
+  const path = window.location.pathname.replace(/\/+$/, '');
+  const prefix = path.includes('/image-converter/') ? '../' : '';
+  loadPartial('site-header', `${prefix}partials/header.html`);
+  loadPartial('site-footer', `${prefix}partials/footer.html`);
 });
