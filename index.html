@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KitMetric Tools</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, sans-serif;
+      background: #f6f8fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+    header {
+      text-align: center;
+      padding: 24px 0 32px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 4vw, 3.6rem);
+      color: #111827;
+    }
+    header p {
+      margin: 14px auto 0;
+      max-width: 760px;
+      color: #4b5563;
+      font-size: 1rem;
+    }
+    .content-grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: minmax(0, 2.3fr) minmax(280px, 1fr);
+      align-items: start;
+    }
+    .main-column,
+    .sidebar {
+      display: grid;
+      gap: 24px;
+    }
+    .section {
+      padding: 26px 24px;
+      border-radius: 24px;
+      background: #ffffff;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.05);
+    }
+    .section h2 {
+      margin-top: 0;
+      font-size: 1.75rem;
+      color: #111827;
+    }
+    .section p {
+      margin-top: 10px;
+      color: #4b5563;
+    }
+    .tools-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      margin-top: 22px;
+    }
+    .tool-card {
+      padding: 18px;
+      border-radius: 18px;
+      border: 1px solid #e5e7eb;
+      background: #f9fafb;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: default;
+    }
+    .tool-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    }
+    .tool-card strong {
+      display: block;
+      margin-bottom: 10px;
+      color: #111827;
+      font-size: 1rem;
+    }
+    .tool-card span {
+      display: block;
+      color: #6b7280;
+      font-size: 0.93rem;
+      min-height: 40px;
+    }
+    .features-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+      padding-left: 20px;
+      color: #374151;
+    }
+    .features-list li {
+      margin-bottom: 6px;
+    }
+    .sidebar-card {
+      padding: 20px;
+      border-radius: 20px;
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+    }
+    .sidebar-card h3 {
+      margin: 0;
+      font-size: 1.15rem;
+      color: #111827;
+    }
+    .sidebar-card p {
+      margin: 12px 0 0;
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+    .sidebar-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 0;
+      display: grid;
+      gap: 12px;
+    }
+    .sidebar-list li {
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      color: #1f2937;
+      font-size: 0.95rem;
+    }
+    .divider {
+      height: 1px;
+      margin: 18px 0;
+      background: #e5e7eb;
+      border: none;
+    }
+    .search-box {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid #d1d5db;
+      font-size: 0.96rem;
+      color: #111827;
+      background: #ffffff;
+    }
+    .search-box button {
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: none;
+      background: #2563eb;
+      color: #ffffff;
+      font-size: 0.96rem;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 44px;
+      text-align: center;
+      color: #6b7280;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 940px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        order: -1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>KitMetric Tools</h1>
+      <p>Your essential image tools hub. Start with image compression, conversion, resizing and developer utilities — links can be added later.</p>
+    </header>
+
+    <div class="content-grid">
+      <main class="main-column">
+        <section class="section" id="essential-image-tools">
+          <h2>Essential Image Tools to Start With</h2>
+          <p>Everything you need to compress, convert, resize and optimize images in one clean and fast interface.</p>
+          <ul class="features-list">
+            <li><strong>Image Compressor</strong> — flagship tool for JPG, PNG, WebP compression with size presets and before/after comparison.</li>
+            <li><strong>JPG/JPEG Compressor</strong> — compress JPEG to 30KB, 100KB, 200KB, 1MB with a quality slider option.</li>
+            <li><strong>PNG Compressor</strong> — compress PNG files with lossless or lossy optimization choices.</li>
+            <li><strong>Image Format Converters</strong> — convert between PNG, JPG, WebP, SVG, ICO, HEIC and more.</li>
+            <li><strong>Image Resizer</strong> — resize by dimensions or file size, including common targets like 20KB, 50KB, 100KB.</li>
+            <li><strong>Image Cropper</strong> — crop images to the perfect frame quickly.</li>
+            <li><strong>Image to Base64 Converter</strong> — generate Base64 image strings for web development use.</li>
+          </ul>
+        </section>
+
+        <section class="section" id="compressor-tools">
+          <h2>Compression Tools</h2>
+          <p>Optimize images for faster loading with preset sizes and smart quality controls.</p>
+          <div class="tools-grid">
+            <div class="tool-card"><strong>Image Compressor</strong><span>Compress JPG, PNG, WebP with preset sizes and comparison preview.</span></div>
+            <div class="tool-card"><strong>Compress JPG/PNG/WebP</strong><span>Choose target file sizes like 20KB, 50KB, 100KB, 200KB.</span></div>
+            <div class="tool-card"><strong>JPG/JPEG Compressor</strong><span>Compress JPEGs to 30KB, 100KB, 200KB, 1MB with quality slider.</span></div>
+            <div class="tool-card"><strong>PNG Compressor</strong><span>Lossless and lossy PNG compression for web-ready images.</span></div>
+          </div>
+        </section>
+
+        <section class="section" id="converter-tools">
+          <h2>Image Format Converters</h2>
+          <p>Fast conversions for popular image formats, including support for iPhone HEIC files and favicon creation.</p>
+          <div class="tools-grid">
+            <div class="tool-card"><strong>PNG to JPG</strong><span>Convert PNG images to JPG format.</span></div>
+            <div class="tool-card"><strong>JPG to PNG</strong><span>Convert JPG images to PNG format.</span></div>
+            <div class="tool-card"><strong>PNG to WebP</strong><span>Convert PNG to WebP for modern web use.</span></div>
+            <div class="tool-card"><strong>WebP to PNG</strong><span>Convert WebP files back to PNG.</span></div>
+            <div class="tool-card"><strong>JPG to WebP</strong><span>Convert JPG files to WebP to save bandwidth.</span></div>
+            <div class="tool-card"><strong>WebP to JPG</strong><span>Convert WebP images to JPG.</span></div>
+            <div class="tool-card"><strong>PNG to SVG</strong><span>Convert PNG images into SVG format.</span></div>
+            <div class="tool-card"><strong>JPG to SVG</strong><span>Convert JPG images into SVG format.</span></div>
+            <div class="tool-card"><strong>PNG to ICO</strong><span>Create favicon-ready ICO files from PNG.</span></div>
+            <div class="tool-card"><strong>HEIC to JPG</strong><span>Convert iPhone HEIC images to JPG.</span></div>
+            <div class="tool-card"><strong>HEIC to PNG</strong><span>Convert iPhone HEIC images to PNG.</span></div>
+          </div>
+        </section>
+
+        <section class="section" id="resize-crop-tools">
+          <h2>Resize & Crop Tools</h2>
+          <p>Resize or crop images for exact dimensions and file-size targets.</p>
+          <div class="tools-grid">
+            <div class="tool-card"><strong>Image Resizer</strong><span>Resize by dimensions or file size with common presets.</span></div>
+            <div class="tool-card"><strong>Image Cropper</strong><span>Crop images quickly to your desired aspect ratio.</span></div>
+            <div class="tool-card"><strong>Image to Base64</strong><span>Convert images to Base64 strings for embedding in code.</span></div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h3>Search Tools</h3>
+          <p>Search for any KitMetric tool or feature using the quick search below.</p>
+          <div class="search-box">
+            <input type="search" placeholder="Search tools..." disabled />
+            <button type="button" disabled>Search</button>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Popular Tools</h3>
+          <p>Most-used tools for image optimization and fast conversions.</p>
+          <ul class="sidebar-list">
+            <li>Image Compressor</li>
+            <li>JPG/JPEG Compressor</li>
+            <li>PNG Compressor</li>
+            <li>Image Resizer</li>
+            <li>Image Cropper</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Related Tools</h3>
+          <p>Ready for future additions and expansion around image workflows.</p>
+          <ul class="sidebar-list">
+            <li>Image to Base64 Converter</li>
+            <li>PNG to ICO</li>
+            <li>HEIC to JPG</li>
+            <li>HEIC to PNG</li>
+            <li>Compress JPG/PNG/WebP</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <p>KitMetric Tools — essential image utilities ready for your links and future tool expansion.</p>
+    </footer>
+  </div>
+</body>
+</html>
