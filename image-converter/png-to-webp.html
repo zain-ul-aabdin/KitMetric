@@ -15,8 +15,13 @@
         <section class="section">
           <h2>Png To Webp Converter</h2>
           <p>Convert Png To Webp files with our easy image conversion tool. Upload a source image and download the converted file.</p>
-          <div class="tools-grid">
-            <div class="tool-card"><strong>Upload your image</strong><span>Choose a file in the source format and download the converted result. Conversion functionality can be added later.</span></div>
+          <div class="converter-uploader">
+            <label class="converter-file-label">
+              <span>Select image file</span>
+              <input type="file" accept="image/*" class="converter-file-input" />
+            </label>
+            <div class="converter-file-name">No file chosen</div>
+            <button class="converter-action-button" type="button" disabled>Convert</button>
           </div>
         </section>
       </main>
@@ -43,5 +48,6 @@
     <div id="site-footer" role="contentinfo"></div>
   </div>
   <script src="../assets/js/includes.js" defer></script>
+  <script src="../assets/js/image-converter.js" defer></script>
 </body>
 </html>

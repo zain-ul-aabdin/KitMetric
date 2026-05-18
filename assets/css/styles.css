@@ -167,6 +167,57 @@ body {
   align-items: start;
 }
 
+.converter-uploader {
+  display: grid;
+  gap: 16px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.converter-file-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 16px;
+  border: 2px dashed #d1d5db;
+  border-radius: 16px;
+  cursor: pointer;
+  color: #374151;
+  background: #f9fafb;
+}
+
+.converter-file-input {
+  display: none;
+}
+
+.converter-file-name {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.converter-action-button {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: none;
+  color: #ffffff;
+  background: #2563eb;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.converter-action-button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
 .main-column,
 .sidebar {
   display: grid;
