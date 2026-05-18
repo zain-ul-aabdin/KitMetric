@@ -4,183 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KitMetric Tools</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, sans-serif;
-      background: #f6f8fb;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-    .page {
-      max-width: 1180px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
-    }
-    header {
-      text-align: center;
-      padding: 24px 0 32px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: clamp(2.4rem, 4vw, 3.6rem);
-      color: #111827;
-    }
-    header p {
-      margin: 14px auto 0;
-      max-width: 760px;
-      color: #4b5563;
-      font-size: 1rem;
-    }
-    .content-grid {
-      display: grid;
-      gap: 24px;
-      grid-template-columns: minmax(0, 2.3fr) minmax(280px, 1fr);
-      align-items: start;
-    }
-    .main-column,
-    .sidebar {
-      display: grid;
-      gap: 24px;
-    }
-    .section {
-      padding: 26px 24px;
-      border-radius: 24px;
-      background: #ffffff;
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.05);
-    }
-    .section h2 {
-      margin-top: 0;
-      font-size: 1.75rem;
-      color: #111827;
-    }
-    .section p {
-      margin-top: 10px;
-      color: #4b5563;
-    }
-    .tools-grid {
-      display: grid;
-      gap: 14px;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      margin-top: 22px;
-    }
-    .tool-card {
-      padding: 18px;
-      border-radius: 18px;
-      border: 1px solid #e5e7eb;
-      background: #f9fafb;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      cursor: default;
-    }
-    .tool-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
-    }
-    .tool-card strong {
-      display: block;
-      margin-bottom: 10px;
-      color: #111827;
-      font-size: 1rem;
-    }
-    .tool-card span {
-      display: block;
-      color: #6b7280;
-      font-size: 0.93rem;
-      min-height: 40px;
-    }
-    .features-list {
-      display: grid;
-      gap: 10px;
-      margin-top: 18px;
-      padding-left: 20px;
-      color: #374151;
-    }
-    .features-list li {
-      margin-bottom: 6px;
-    }
-    .sidebar-card {
-      padding: 20px;
-      border-radius: 20px;
-      background: #f9fafb;
-      border: 1px solid #e5e7eb;
-    }
-    .sidebar-card h3 {
-      margin: 0;
-      font-size: 1.15rem;
-      color: #111827;
-    }
-    .sidebar-card p {
-      margin: 12px 0 0;
-      color: #4b5563;
-      font-size: 0.95rem;
-    }
-    .sidebar-list {
-      list-style: none;
-      padding: 0;
-      margin: 16px 0 0;
-      display: grid;
-      gap: 12px;
-    }
-    .sidebar-list li {
-      padding: 14px 16px;
-      border-radius: 14px;
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      color: #1f2937;
-      font-size: 0.95rem;
-    }
-    .divider {
-      height: 1px;
-      margin: 18px 0;
-      background: #e5e7eb;
-      border: none;
-    }
-    .search-box {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 16px;
-    }
-    .search-box input {
-      width: 100%;
-      padding: 14px 16px;
-      border-radius: 14px;
-      border: 1px solid #d1d5db;
-      font-size: 0.96rem;
-      color: #111827;
-      background: #ffffff;
-    }
-    .search-box button {
-      padding: 14px 16px;
-      border-radius: 14px;
-      border: none;
-      background: #2563eb;
-      color: #ffffff;
-      font-size: 0.96rem;
-      cursor: pointer;
-    }
-    footer {
-      margin-top: 44px;
-      text-align: center;
-      color: #6b7280;
-      font-size: 0.95rem;
-    }
-    @media (max-width: 940px) {
-      .content-grid {
-        grid-template-columns: 1fr;
-      }
-      .sidebar {
-        order: -1;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page">
-    <header>
-      <h1>KitMetric Tools</h1>
-      <p>Your essential image tools hub. Start with image compression, conversion, resizing and developer utilities — links can be added later.</p>
-    </header>
+    <!-- Shared header loaded from partials/header.html -->
+    <div id="site-header" role="banner"></div>
 
     <div class="content-grid">
       <main class="main-column">
@@ -274,9 +103,9 @@
       </aside>
     </div>
 
-    <footer>
-      <p>KitMetric Tools — essential image utilities ready for your links and future tool expansion.</p>
-    </footer>
+    <!-- Shared footer loaded from partials/footer.html -->
+    <div id="site-footer" role="contentinfo"></div>
   </div>
+  <script src="partials/includes.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About KitMetric</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <!-- Shared header loaded from partials/header.html -->
+    <div id="site-header" role="banner"></div>
+
+    <div class="content-grid">
+      <main class="main-column">
+        <section class="section">
+          <h2>About KitMetric</h2>
+          <p>KitMetric is a lightweight toolkit for image utilities and developer workflows. The shared header and footer are loaded from reusable partials so every page stays consistent.</p>
+          <div class="tools-grid">
+            <div class="tool-card"><strong>Shared Layout</strong><span>Header and footer are now applied site-wide through reusable HTML partials.</span></div>
+            <div class="tool-card"><strong>Static Site Friendly</strong><span>Uses a small client-side loader to include shared markup on plain HTML pages.</span></div>
+            <div class="tool-card"><strong>Reusable Pattern</strong><span>Add more pages easily with the same partials and stylesheet.</span></div>
+          </div>
+        </section>
+      </main>
+
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h3>How it works</h3>
+          <p>This page loads the shared header and footer from the `partials` folder using `partials/includes.js`.</p>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Next step</h3>
+          <p>Create more pages like this one and reuse the same `<code>header.html</code>` and `<code>footer.html</code>` files.</p>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Shared footer loaded from partials/footer.html -->
+    <div id="site-footer" role="contentinfo"></div>
+  </div>
+  <script src="partials/includes.js" defer></script>
+</body>
+</html>
