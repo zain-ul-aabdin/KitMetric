@@ -206,8 +206,8 @@ body {
   background: #f9fafb;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 .tool-card:hover {
